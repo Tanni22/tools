@@ -1,0 +1,57 @@
+<html>
+<head>
+</head>
+<body>
+<table>
+<tr>
+<td>First Number </td>
+<td><input   name="FirstNumber" id="FirstNumber" placeholder="Enter the first number"></td>
+</tr>
+<tr>
+<td>Second Number </td>
+<td><input   name="secondNumber" id="SecondNumber" placeholder="Enter the second number"></td>
+</tr>
+<tr>
+<td>Result</td>
+<td><input   name="result" id="result" placeholder="Result"></td>
+</tr>
+<tr>
+<td>Result</td>
+<td id="resultTd"></td>
+</tr>
+<tr>
+<td></td>
+<td><input onclick="jsfunction()" type="button" name="submitButton" value="submit"></td>
+</tr>
+</table>
+</body>
+<script>
+  function jsfunction()
+ {
+   var firstNumber=document.getElementById('FirstNumber').value;
+   var secondNumber=document.getElementById('SecondNumber').value;
+  // alert(firstNumber);
+   //alert("hellow");
+  // var firstNumber=10;
+  // var secondNumber=20;
+  //alert("the sum is="+(Number(firstNumber)+Number(secondNumber)));
+
+   var result=firstNumber*secondNumber;
+   document.getElementById('result').value=result;
+   document.getElementById('resultTd').innerHTML=result;
+   //document.write("the sum is="+(Number(firstNumber)+Number(secondNumber)));
+   // var getFromuser=prompt("Enter a Numeric value");
+   //alert(getFromuser);
+   document.getElementById('submitButton').style.backgroundColor="blue";
+   //confirm("Do you want to delet?");
+   
+   const dataarray=["A","B","C"];
+   for(let index=0;index<dataarry.length;index++)
+   {
+      document.write(dataarry[index]+'<br>');
+   }
+ 
+ }
+</script>
+
+</html>
